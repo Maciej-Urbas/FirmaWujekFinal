@@ -1,6 +1,13 @@
 nav {
+  display: flex;
+  flex-direction: row;
+
   background-color: rgba(30, 30, 30, 0.92);
-  height: 221px;
+
+  max-width: 1920px;
+  width: 100vw;
+  height: 12vw;
+
   font-family: "JockeyOne";
 }
 
@@ -10,5 +17,80 @@ nav {
 
 .a_content {
   font-size: 40px;
+  color: white;
   text-decoration: none;
+}
+
+.nav-baner {
+  max-width: 1920px;
+  width: 100vw;
+  display: flex;
+}
+
+.menuButton {
+  display: none;
+}
+
+.content {
+  width: inherit;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+.content-up {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 0.4vw;
+
+  margin-top: 0.8vw;
+  margin-right: 0.8vw;
+}
+.content-up-pairs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.4vw;
+}
+.content-up-limiterSvg {
+}
+
+.content-down {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 16vw;
+  margin-bottom: 1.8vw;
+  align-items: center;
+  gap: 4.2vw;
+}
+.content-down-kontaktButton {
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+
+  border: none;
+  border-radius: 16px;
+  background-color: rgba(37, 138, 120, 1);
+
+  transition: 0.2s;
+}
+.content-down-kontaktButton:hover {
+  background-color: #45aa98;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 12vw;
+
+  margin-left: 0.8vw;
+}
+.logo_img {
+  height: 90%;
 }

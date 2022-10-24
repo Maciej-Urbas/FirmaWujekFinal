@@ -1,4 +1,6 @@
 body {
+  max-width: 1920px;
+
   position: absolute;
   left: 0;
   top: 0;
