@@ -1,10 +1,10 @@
-<nav>
+<nav [class.nav-active]="isExpanded">
   <div class="logo">
     <img class="logo_img" src="/assets/UsługiBudowlaneTransparent.png" />
   </div>
 
-  <div class="content">
-    <div class="content-up">
+  <div class="content" [class.content-active]="isExpanded">
+    <div class="content-up" [class.content-up-active]="isExpanded">
       <div class="content-up-pairs">
         <svg
           class="content-up-pairs-icons"
@@ -112,7 +112,7 @@
       </div>
     </div>
 
-    <div class="content-down">
+    <div class="content-down" [class.content-down-active]="isExpanded">
       <a href="" class="content-down-a a_content">Strona główna</a>
       <a href="" class="content-down-a a_content">Oferta</a>
       <a href="" class="content-down-a a_content">Galeria</a>
@@ -125,7 +125,15 @@
   </div>
 
   <div class="menuButton">
-    <button class="menuButton_button"></button>
+    <button
+      class="menuButton_button"
+      (click)="toggle()"
+      [class.menuButton_button-active]="isExpanded"
+    ></button>
   </div>
 </nav>
-<img class="nav-baner" src="/assets/baner-min.png" />
+<img
+  class="nav-baner"
+  [class.nav-baner-active]="isExpanded"
+  src="/assets/baner-min.png"
+/>
