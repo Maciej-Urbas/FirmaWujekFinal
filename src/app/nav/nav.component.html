@@ -1,7 +1,8 @@
 <nav [class.nav-active]="isExpanded">
-  <div class="logo">
-    <img class="logo_img" src="/assets/logo.png" />
-  </div>
+  <a href=""
+    ><div class="logo">
+      <img class="logo_img" src="/assets/logo.png" /></div
+  ></a>
 
   <div class="content" [class.content-active]="isExpanded">
     <div class="content-up" [class.content-up-active]="isExpanded">
@@ -114,13 +115,15 @@
 
     <div class="content-down" [class.content-down-active]="isExpanded">
       <a href="" class="content-down-a a_content">Strona główna</a>
-      <a href="" class="content-down-a a_content">Oferta</a>
-      <a href="" class="content-down-a a_content">Galeria</a>
-      <a href="" class="content-down-a"
-        ><button class="content-down-kontaktButton a_content">
-          Kontakt
-        </button></a
+      <a href="offer" class="content-down-a a_content">Oferta</a>
+      <a href="galery" class="content-down-a a_content">Galeria</a>
+
+      <button
+        (click)="zjedzNaDol()"
+        class="content-down-kontaktButton a_content"
       >
+        Kontakt
+      </button>
     </div>
   </div>
 

@@ -23,7 +23,7 @@ export class NavComponent implements OnInit {
   zjedzNaDol() {
     if (window.innerWidth < 746) {
       this.toggle();
-      const butt = document.getElementsByClassName('footer-down-container_p');
+      const butt = document.getElementsByClassName('footer-down');
       let ss = butt[0].getBoundingClientRect().top;
 
       setTimeout(() => {
@@ -34,7 +34,7 @@ export class NavComponent implements OnInit {
         });
       }, 400);
     } else {
-      const butt = document.getElementsByClassName('footer-down-container_p');
+      const butt = document.getElementsByClassName('footer-down');
       let ss = butt[0].getBoundingClientRect().top;
       ss = ss + 200;
 

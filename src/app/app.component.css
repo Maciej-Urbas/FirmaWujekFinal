@@ -12,10 +12,10 @@ body {
   font-weight: 400;
 }
 
-@font-face {
+/* @font-face {
   font-family: "JockeyOne";
   src: url(../assets/fonts/font2.woff2) format("woff2");
-}
+} */
 
 @font-face {
   font-family: "Inder";
