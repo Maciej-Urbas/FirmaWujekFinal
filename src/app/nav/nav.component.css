@@ -168,6 +168,9 @@ nav {
   .nav-active {
     background-color: #1e1e1e;
     height: 100vh;
+    z-index: 1;
+
+    position: fixed;
   }
 
   .content-active {
@@ -187,7 +190,8 @@ nav {
     height: 60vh;
     width: 100vw;
 
-    margin-top: 30vh;
+    margin-top: clamp(min(160px), 34vh, max(550px));
+    gap: 6vw 0vw;
 
     display: flex;
     flex-direction: column;

@@ -1,0 +1,193 @@
+footer {
+  margin-top: 6vw;
+
+  display: flex;
+  flex-direction: column;
+
+  color: white;
+  font-weight: 600;
+  font-size: clamp(min(16px), 2.03vw, max(40px));
+  font-family: "Jockey One";
+
+  background-color: rgba(30, 30, 30, 0.92);
+}
+
+.helper-color {
+  color: #258a78;
+}
+
+.helper-title {
+  font-size: clamp(min(26px), 3.334vw, max(64px));
+}
+
+.footer-up {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-evenly;
+
+  padding: 3vw 0;
+}
+.footer-up-left {
+  width: 44vw;
+}
+
+.footer-up-left-tittle::after {
+  content: "";
+  width: 95%;
+  height: clamp(min(2px), 0.313vw, max(6px));
+
+  margin-top: 1vw;
+  display: block;
+  opacity: 0.5;
+  background-color: rgba(217, 217, 217, 0.39);
+}
+
+.footer-up-left-pair-address {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 1.2vw;
+
+  margin-top: 2.6vw;
+}
+.footer-up-hr::after {
+  content: "";
+  width: 95%;
+  height: clamp(min(2px), 0.313vw, max(6px));
+  margin-top: 1.6vw;
+  display: block;
+  background-color: rgba(217, 217, 217, 0.39);
+}
+
+.footer-up-left-pair-telephone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 1.2vw;
+
+  margin-top: 2.6vw;
+}
+
+.footer-up-left-pair-email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 1.2vw;
+
+  margin-top: 2.6vw;
+
+  position: relative;
+  right: 1vw;
+}
+
+.footer-up-left-pair_svg {
+  height: clamp(min(14px), 1.79vw, max(32.5px));
+}
+
+.footer-up-right {
+  width: 44vw;
+}
+.footer-up-right-text {
+  width: 76%;
+  margin-top: 2.6vw;
+  margin-left: 2.6vw;
+  font-weight: bolder;
+  text-align: justify;
+}
+.footer-up-right-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: clamp(min(126px), 15.834vw, max(304px));
+  height: clamp(min(40px), 4.48vw, max(86px));
+
+  margin: auto;
+  margin-top: 2.6vw;
+
+  border: none;
+  border-radius: clamp(min(10px), 1vw, max(16px));
+
+  font-weight: 600;
+  font-size: clamp(min(16px), 2.03vw, max(40px));
+  font-family: "Jockey One";
+}
+
+.footer-down {
+  text-align: center;
+  padding: 0.2vw 0;
+  background-color: rgba(217, 217, 217, 0.18);
+
+  font-size: clamp(min(12px), 1.04vw, max(20px));
+}
+
+@media screen and (min-width: 2px) and (max-width: 776px) {
+  footer {
+    font-size: clamp(min(14px), 3.866vw, max(30px));
+  }
+
+  .helper-title {
+    font-size: clamp(min(16px), 6.186vw, max(48px));
+  }
+
+  .footer-up {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-up-left {
+    width: 90vw;
+  }
+  .footer-up-left-pair-address {
+    width: 92vw;
+  }
+  .footer-up-left-pair-telephone {
+    width: 92vw;
+  }
+  .footer-up-left-pair-email {
+    width: 92vw;
+
+    gap: 0.2vw;
+    position: relative;
+    right: 2vw;
+  }
+  .footer-up-left-pair_svg {
+    height: clamp(min(11.375px), 3.345vw, max(24.375px));
+  }
+  .footer-up-left-tittle {
+    text-align: center;
+  }
+  .footer-up-left-tittle::after {
+    display: none;
+  }
+
+  .footer-up-hr {
+    display: none;
+  }
+
+  .footer-up-right {
+    margin-top: 4vw;
+    width: 90vw;
+  }
+  .footer-up-right-tittle {
+    text-align: center;
+  }
+  .footer-up-right-text {
+    margin: auto;
+    margin-top: 2.6vw;
+  }
+  .footer-up-right-button {
+    width: clamp(min(99.5px), 29.4vw, max(228px));
+    height: clamp(min(40px), 8.31vw, max(64.5px));
+    font-size: clamp(min(14px), 3.866vw, max(30px));
+  }
+
+  .footer-down {
+    margin-top: 2vw;
+    font-size: clamp(min(9.34px), 2.58vw, max(20px));
+  }
+}
