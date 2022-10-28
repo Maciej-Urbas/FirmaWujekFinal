@@ -51,6 +51,18 @@ main {
 
   color: #258a78;
 }
+.galery-title::after {
+  content: "";
+  width: 30%;
+  height: clamp(min(3px), 0.26vw, max(5px));
+  background-color: rgba(30, 30, 30, 0.92);
+
+  position: relative;
+  bottom: 10.4vw;
+
+  margin-left: 1vw;
+  display: block;
+}
 
 .galery-title-bigger {
   opacity: 0.12;
@@ -83,6 +95,19 @@ main {
     margin-left: 9vw;
 
     color: #258a78;
+  }
+  .galery-title::after {
+    content: "";
+    width: 54%;
+    height: clamp(min(2px), 0.644vw, max(5px));
+    background-color: rgba(30, 30, 30, 0.92);
+
+    position: relative;
+    bottom: 17.4vw;
+
+    margin-left: 1vw;
+    margin-bottom: 1vw;
+    display: block;
   }
 
   .galery-title-bigger {

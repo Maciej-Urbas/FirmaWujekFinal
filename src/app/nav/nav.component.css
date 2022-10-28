@@ -80,7 +80,7 @@ nav {
   color: white;
 
   border: none;
-  border-radius: 16px;
+  border-radius: clamp(min(12px), 0.84vw, max(16px));
   background-color: rgba(37, 138, 120, 1);
 
   transition: 0.4s;

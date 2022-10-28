@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
 import { GaleryComponent } from './galery/galery.component';
+import { OfferComponent } from './offer/offer.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { GaleryComponent } from './galery/galery.component';
     HomeComponent,
     FooterComponent,
     GaleryComponent,
+    OfferComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,6 +25,7 @@ import { GaleryComponent } from './galery/galery.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'galery', component: GaleryComponent },
+      { path: 'offer', component: OfferComponent },
     ]),
   ],
   providers: [],
